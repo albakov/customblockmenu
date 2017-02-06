@@ -1,0 +1,39 @@
+.customblockmenu ul li {
+	list-style: none;
+	display: block;
+	position: relative;
+}
+.customblockmenu .parent {
+	border-top: 1px solid #ddd;
+}
+.customblockmenu ul li a {
+	display: block;
+	padding: 7px;
+}
+.customblockmenu .sub-menu {
+	display: none;
+}
+.customblockmenu .sub-menu li {
+	padding-left: 20px;
+}
+.customblockmenu .plus-minus {
+	display: block;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	position: absolute;
+	top: 3px;
+	right: 0;
+	text-align: center;
+    line-height: 25px;
+    border: 1px solid #bbb;
+}
+.customblockmenu .plus-minus:after {
+	display: block;
+	content: '+';
+	font-size: 18px;
+}
+.customblockmenu .plus-minus:hover:after,
+.customblockmenu .plus-minus.active:after {
+	content: '-';
+}
